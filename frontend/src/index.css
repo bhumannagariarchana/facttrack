@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-50 dark:bg-darkBg text-slate-900 dark:text-slate-100;
+  }
+}
+
+/* Glassmorphism utility classes */
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.dark .glass {
+  background: rgba(30, 41, 59, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Custom word highlighting animations */
+.highlight-left {
+  background-color: rgba(59, 130, 246, 0.2);
+  border-bottom: 2px solid #3b82f6;
+  padding: 0px 2px;
+  border-radius: 2px;
+  transition: all 0.2s ease-in-out;
+}
+
+.highlight-left:hover {
+  background-color: rgba(59, 130, 246, 0.35);
+}
+
+.highlight-right {
+  background-color: rgba(239, 68, 68, 0.2);
+  border-bottom: 2px solid #ef4444;
+  padding: 0px 2px;
+  border-radius: 2px;
+  transition: all 0.2s ease-in-out;
+}
+
+.highlight-right:hover {
+  background-color: rgba(239, 68, 68, 0.35);
+}
+
+.highlight-center {
+  background-color: rgba(16, 185, 129, 0.2);
+  border-bottom: 2px solid #10b981;
+  padding: 0px 2px;
+  border-radius: 2px;
+  transition: all 0.2s ease-in-out;
+}
+
+.highlight-center:hover {
+  background-color: rgba(16, 185, 129, 0.35);
+}
+
+/* Simple smooth scroll */
+html {
+  scroll-behavior: smooth;
+}

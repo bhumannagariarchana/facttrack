@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+dist/
+build/
+.eslintcache
+
+# Python cache and environments
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.venv/
+venv/
+env/
+.env
+
+# Database and ML assets
+backend/facttrack.db
+trained_models/
+datasets/
+.huggingface/
+.cache/
+
+# OS specific files
+.DS_Store
+.DS_Store?
+ehthumbs.db
+Thumbs.db
