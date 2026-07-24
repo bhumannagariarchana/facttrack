@@ -21,7 +21,7 @@ class Settings(BaseSettings):
     BIAS_MODEL_PATH: str = os.path.join(TRAINED_MODELS_DIR, "bias_model")
 
     # Fallback pre-trained model for zero-shot classification when fine-tuned weights are missing
-    ZERO_SHOT_MODEL: str = "MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli"
+    ZERO_SHOT_MODEL: str = "MoritzLaurer/DeBERTa-v3-xsmall-mnli-fever-anli"
 
     # Model parameters
     MAX_SEQUENCE_LENGTH: int = 512
